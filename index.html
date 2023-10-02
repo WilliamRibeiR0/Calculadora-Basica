@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calculo</h1>
+    <div>
+        <div>
+            <input type="number" id="number1">
+            
+            <input type="number" id="number2">
+        </div>
+        <br>
+        <div>
+            <button id="soma" onclick="soma()">soma</button>
+            <button id="subtraçao" onclick="subtraçao()">subtraçao</button>
+            <button id="divisao" onclick="divisao()">divisao</button>
+            <button id="multiplicação" onclick="multiplicação()">multiplicação</button>
+        </div>
+        <div id="resultado">
+
+        </div>
+        <br>
+        <button onclick="reset()">reset</button>
+    </div>
+
+    <script>
+        const number1 = document.querySelector('#number1')
+        const number2 = document.querySelector('#number2')
+        const resultado = document.querySelector('#resultado')
+        
+        function soma(){
+            resultado.innerHTML = Number(number1.value) + Number(number2.value)
+        }
+
+        function subtraçao(){
+            resultado.innerHTML = Number(number1.value) - Number(number2.value)
+        }
+        
+        function divisao(){
+            resultado.innerHTML = Number(number1.value) / Number(number2.value)
+        }
+
+        function multiplicação(){
+            resultado.innerHTML = Number(number1.value) * Number(number2.value)
+        }
+        
+        function reset() {
+        window.location.reload();
+}
+        
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
